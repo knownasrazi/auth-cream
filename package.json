@@ -1,8 +1,8 @@
 ﻿{
-  "name": "auth-cream",
+  "name": "auth-clean",
   "version": "1.0.0",
   "private": true,
-  "description": "Auth cream starter - email magic link, OAuth, and session, styled minimal.",
+  "description": "Auth clean starter - email magic link, OAuth, and session, styled minimal.",
   "keywords": [
     "auth",
     "nextauth",

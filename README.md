@@ -1,21 +1,21 @@
-> ![license](https://img.shields.io/github/license/knownasrazi/auth-cream?style=flat-square&color=ebe7e0) ![lang](https://img.shields.io/badge/lang-NextAuth-ede9e3?style=flat-square) ![version](https://img.shields.io/badge/version-1.0.0-ebe7e0?style=flat-square)
+> ![license](https://img.shields.io/github/license/knownasrazi/auth-clean?style=flat-square&color=ebe7e0) ![lang](https://img.shields.io/badge/lang-NextAuth-ede9e3?style=flat-square) ![version](https://img.shields.io/badge/version-1.0.0-ebe7e0?style=flat-square)
 
 ---
 
-# auth-cream
+# auth-clean
 
-**Auth cream starter - email magic link, OAuth, and session, styled minimal.**
+**Auth clean starter - email magic link, OAuth, and session, styled minimal.**
 
-> Auth that feels like cream.
+> Auth that feels like clean.
 
 ---
 
-## auth-cream vs the rest
+## auth-clean vs the rest
 
-| Tool | auth-cream | Others |
+| Tool | auth-clean | Others |
 |------|-----------|--------|
 | **Privacy** | Local-first | Cloud upload |
-| **Aesthetic** | Cream, stone, ink | Neon, noise |
+| **Aesthetic** | Clean, stone, ink | Neon, noise |
 | **Vibe** | For coders who ship | For managers who watch |
 
 ## Stack
@@ -26,8 +26,8 @@
 ## Run locally
 
 ```bash
-git clone https://github.com/knownasrazi/auth-cream.git
-cd auth-cream
+git clone https://github.com/knownasrazi/auth-clean.git
+cd auth-clean
 bun run dev
 ```
 
