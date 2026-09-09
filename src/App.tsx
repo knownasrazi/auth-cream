@@ -1,13 +1,22 @@
-﻿export default function App() {
+import { useState } from "react";
+export default function App(){
+  const [email,setEmail]=useState(""); const [sent,setSent]=useState(false);
+  function send(){ if(!email.includes("@")) return alert("Enter email"); setSent(true); }
   return (
-    <main className="min-h-screen bg-[#fdfcfa] text-[#1a1a1a]">
-      <div className="mx-auto max-w-3xl px-6 py-24">
-        <p className="text-sm tracking-widest text-[#9a9590]">auth-clean</p>
-        <h1 className="mt-2 text-4xl font-light tracking-tight">Auth that feels like clean.</h1>
-        <p className="mt-4 max-w-prose text-[#5a5754]">Auth clean starter - email magic link, OAuth, and session, styled minimal.</p>
-        <div className="mt-8 rounded-2xl border border-[#ebe7e0] bg-white p-6">
-          <p className="text-sm text-[#9a9590]">Clean aesthetic - built for vibe coders.</p>
-        </div>
+    <main className="bg-[#fdfcfa] min-h-screen text-[#1a1a1a] flex items-center justify-center px-6">
+      <div className="w-full max-w-sm rounded-2xl border border-[#ebe7e0] bg-white p-6">
+        <h1 className="text-xl font-light">auth-cream</h1>
+        <p className="text-sm text-[#5a5754]">Magic link sign in — no passwords.</p>
+        {!sent ? (
+          <div className="mt-4 space-y-3">
+            <input value={email} onChange={e=>setEmail(e.target.value)} placeholder="you@example.com" className="w-full rounded-xl border border-[#ebe7e0] px-3 py-2 text-sm" />
+            <button onClick={send} className="w-full rounded-xl bg-[#1a1a1a] py-2 text-sm text-white">Send magic link</button>
+            <div className="flex gap-2">
+              <button className="flex-1 rounded-xl border border-[#ebe7e0] py-2 text-sm">GitHub</button>
+              <button className="flex-1 rounded-xl border border-[#ebe7e0] py-2 text-sm">Google</button>
+            </div>
+          </div>
+        ) : <p className="mt-4 text-sm text-[#5a5754]">Check your email — link sent to {email}</p>}
       </div>
     </main>
   );
